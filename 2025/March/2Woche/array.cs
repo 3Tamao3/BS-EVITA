@@ -14,7 +14,7 @@ public class Name
     zahlen[4] = 1;
 
     for(int i = 0; i < 5;i++)
-      Console.WriteLine(zahlen[i]);
+      Console.Write(zahlen[i]);
 
     Console.WriteLine("\n");
 
@@ -35,7 +35,26 @@ public class Name
 
     int[] zahlen2 = new int[5] {5, 2, 3, 4, 1};
 
+ for (int i3 = 0; i3 < zahlen2.Length - 1; i3++)
+        {
+            for (int j = 0; j < zahlen2.Length - 1 - i3; j++)
+            {
+                if (zahlen2[j] > zahlen2[j + 1])
+                {
+                    // Swap values
+                    int temp = zahlen2[j];
+                    zahlen2[j] = zahlen2[j + 1];
+                    zahlen2[j + 1] = temp;
+                }
+            }
+        }
 
+         Console.WriteLine("Sorted numbers:");
+for (int i = 0; i < zahlen2.Length; i++)
+        {
+            Console.Write(zahlen2[i] + " ");
+        }
+Console.WriteLine("\n");
 
   }
 }
