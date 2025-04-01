@@ -35,7 +35,7 @@ public class Name
 
     int[] zahlen2 = new int[5] {5, 2, 3, 4, 1};
 
- for (int i3 = 0; i3 < zahlen2.Length - 1; i3++)
+    for (int i3 = 0; i3 < zahlen2.Length - 1; i3++)
         {
             for (int j = 0; j < zahlen2.Length - 1 - i3; j++)
             {
@@ -49,12 +49,26 @@ public class Name
             }
         }
 
-         Console.WriteLine("Sorted numbers:");
-for (int i = 0; i < zahlen2.Length; i++)
+    for (int i = 0; i < zahlen2.Length; i++)
         {
             Console.Write(zahlen2[i] + " ");
         }
-Console.WriteLine("\n");
+    Console.WriteLine("\n");
 
+
+    AusgabeArray(zahlen1);
+    Console.WriteLine("\n");
+
+
+   
   }
+
+  static void AusgabeArray(int[] array)
+    {
+      for(int i = 0; i < 10; i++)
+        {
+          Console.Write(array[i] + " ");
+        }
+    }
+
 }
