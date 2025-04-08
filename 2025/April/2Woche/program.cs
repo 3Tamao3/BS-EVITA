@@ -32,13 +32,8 @@ class idk
                 Kopfrechentrainer();
                 break;
         }
-        // Aufgabe 2
-        // Aufgabe 3
-        // Aufgabe 4
-        // Aufgabe 5
     }
 
-    // Aufgabe 1
     static void Notendurchschnitt()
     {
         Console.WriteLine("Notendurchschnitt\n");
@@ -50,7 +45,15 @@ class idk
         Console.WriteLine("Gib eine Zahl ein: ");
         decimal note3 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Notendurchschnitt: " + (note1 + note2 + note3) / 3);
+        if ((note1 + note2 + note3) / 3 <= 2.5m)
+        {
+            Console.WriteLine("Sehr Gut!!!");
+            Console.WriteLine("Notendurchschnitt: " + (note1 + note2 + note3) / 3);
+        }
+        else
+        {
+            Console.WriteLine("Notendurchschnitt: " + (note1 + note2 + note3) / 3);
+        }
     }
 
     static void Wassertemparatur()
@@ -95,7 +98,7 @@ class idk
         }
         else
         {
-         Console.WriteLine("Gute Nacht");   
+            Console.WriteLine("Gute Nacht");
         }
     }
 
@@ -123,7 +126,7 @@ class idk
         }
     }
 
-    static void Kopfrechentrainer() 
+    static void Kopfrechentrainer()
     {
         Random random = new Random();
 
@@ -133,15 +136,14 @@ class idk
         Console.WriteLine(zahl1 + " " + zahl2);
         Console.WriteLine("Was ist das Ergebnis?");
         int userInput = Convert.ToInt32(Console.ReadLine());
-        
+
         if (userInput == zahl1 + zahl2)
         {
             Console.WriteLine("RICHTIG");
         }
         else
         {
-           Console.WriteLine(zahl1 + zahl2 + " War das Ergebnis"); 
+            Console.WriteLine(zahl1 + zahl2 + " War das Ergebnis");
         }
-
     }
 }
