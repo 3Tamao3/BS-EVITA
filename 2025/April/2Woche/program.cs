@@ -39,11 +39,11 @@ class idk
         Console.WriteLine("Notendurchschnitt\n");
 
         Console.WriteLine("Gib eine Zahl ein: ");
-        decimal note1 = Convert.ToInt32(Console.ReadLine());
+        decimal note1 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Gib eine Zahl ein: ");
-        decimal note2 = Convert.ToInt32(Console.ReadLine());
+        decimal note2 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Gib eine Zahl ein: ");
-        decimal note3 = Convert.ToInt32(Console.ReadLine());
+        decimal note3 = Convert.ToDouble(Console.ReadLine());
 
         if ((note1 + note2 + note3) / 3 <= 2.5m)
         {
@@ -133,7 +133,7 @@ class idk
         int zahl1 = random.Next(1, 50);
         int zahl2 = random.Next(1, 50);
 
-        Console.WriteLine(zahl1 + " " + zahl2);
+        Console.WriteLine(zahl1 + " + " + zahl2);
         Console.WriteLine("Was ist das Ergebnis?");
         int userInput = Convert.ToInt32(Console.ReadLine());
 
