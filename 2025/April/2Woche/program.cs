@@ -39,7 +39,7 @@ class idk
         Console.WriteLine("Notendurchschnitt\n");
 
         Console.WriteLine("Gib eine Zahl ein: ");
-        decimal note1 = Convert.ToDouble(Console.ReadLine());
+        decimal note1 = Convert.D(Console.ReadLine());
         Console.WriteLine("Gib eine Zahl ein: ");
         decimal note2 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Gib eine Zahl ein: ");
