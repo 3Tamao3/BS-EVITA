@@ -4,55 +4,54 @@ class test
 {
     static void Main(string[] args)
     {
-      //1. Aufgabe
-      
-      for (int i = 0; i < 10; i++)
-      {
-          Console.Write(i + " ");
-      }
+        //1. Aufgabe
 
-      Console.WriteLine("\n");
-      
-      //2. Aufgabe
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Write(i + " ");
+        }
 
-      for (int i = 0; i  < 20; i = i + 2)
-      {
-         Console.Write(i + " "); 
-      }
+        Console.WriteLine("\n");
 
-      Console.WriteLine("\n");
+        //2. Aufgabe
 
-      //3. Aufgabe
+        for (int i = 0; i < 20; i = i + 2)
+        {
+            Console.Write(i + " ");
+        }
 
-    int ergebnis = 0;
+        Console.WriteLine("\n");
 
-      for (int i = 0; i < 101; i++)
-      {
-          ergebnis = ergebnis + i;
-      }
+        //3. Aufgabe
 
-      Console.Write("Summe: " + ergebnis);
-      Console.WriteLine("\n");
+        int ergebnis = 0;
 
-    //4. Aufgabe
+        for (int i = 0; i < 101; i++)
+        {
+            ergebnis = ergebnis + i;
+        }
 
-    for (int i = 0; i < 50; i = i + 5)
-    {
-        Console.Write(i + " ");
-    }
-    
-    Console.WriteLine("\n");
+        Console.Write("Summe: " + ergebnis);
+        Console.WriteLine("\n");
 
-    //5. Aufgabe
+        //4. Aufgabe
 
-    for (int i = 0; i != 5; i++)
-{
-      for (int j= 0; j <= i; j++)
-      {
-          Console.Write("*");
-      }
-      Console.Write("\n");
-    }
+        for (int i = 0; i < 50; i = i + 5)
+        {
+            Console.Write(i + " ");
+        }
 
+        Console.WriteLine("\n");
+
+        //5. Aufgabe
+
+        for (int i = 0; i != 5; i++)
+        {
+            for (int j = 0; j <= i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n");
+        }
     }
 }
