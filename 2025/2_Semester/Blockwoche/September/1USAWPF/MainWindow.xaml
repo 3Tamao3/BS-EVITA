@@ -1,0 +1,396 @@
+﻿<Window x:Class="_1USAWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1USAWPF"
+        mc:Ignorable="d"
+        Title="1USA_Blockwoche_WPF" Height="712" Width="1458" Background="#FF0C0C1C" Foreground="White">
+    <Grid>
+
+        <TabControl Grid.ColumnSpan="2" Grid.RowSpan="2" Background="White" BorderBrush="White" Foreground="White">
+            <TabControl.Resources>
+                <!-- central colors -->
+                <SolidColorBrush x:Key="TabBgNormal"   Color="#FF0C0C1C"/>
+                <SolidColorBrush x:Key="TabBgSelected" Color="#FF37376F"/>
+                <SolidColorBrush x:Key="TabBorder"     Color="#FF5C5C9C"/>
+                <SolidColorBrush x:Key="TabFg"         Color="White"/>
+
+                <!-- TabItem header template -->
+                <Style TargetType="TabItem">
+                    <!-- defaults (unselected) -->
+                    <Setter Property="Background" Value="{StaticResource TabBgNormal}"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource TabBorder}"/>
+                    <Setter Property="Foreground" Value="{StaticResource TabFg}"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="Padding" Value="8,4"/>
+
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <!-- This Border is the visible tab header -->
+                                <Border x:Name="Bd"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            SnapsToDevicePixels="True">
+                                    <ContentPresenter ContentSource="Header"
+                                          RecognizesAccessKey="True"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                                </Border>
+
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Bd" Property="Background" Value="{StaticResource TabBgSelected}"/>
+                                        <Setter TargetName="Bd" Property="BorderBrush"  Value="{StaticResource TabBorder}"/>
+                                        <Setter Property="Foreground" Value="{StaticResource TabFg}"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Foreground"
+                                    Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="Aufgabe 1">
+                <Grid Background="#FF0C0C1C">
+
+                    <TextBlock HorizontalAlignment="Left" Margin="226,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="86" FontSize="36"><Run Text="Liter"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBox x:Name="LiterInput" HorizontalAlignment="Left" Margin="466,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="36" FontSize="22" TextAlignment="Center"/>
+                    <TextBox x:Name="PreisProLiter" HorizontalAlignment="Left" Margin="466,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Height="36" FontSize="22" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="153,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="232" FontSize="36"><Run Language="de-at" Text="Preis pro Liter"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="190,517,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="244" FontSize="36"><Run Text="Gesamtkosten"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="190,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="232" FontSize="36"><Run Text="20% MwSt."/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="190,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="232" FontSize="36"><Run Language="de-at" Text="Nettopreis:"/></TextBlock>
+                    <Button Content="Berechnen" x:Name="aufgabe1_confirm" HorizontalAlignment="Left" Margin="822,0,0,0" VerticalAlignment="Center" Click="LiterBerechnen" Height="72" Width="171" FontSize="22" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White"/>
+                    <TextBlock x:Name="GesamtkostenOutput" HorizontalAlignment="Left" Margin="466,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.86,-0.093" Height="33" Width="100" FontSize="24" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock x:Name="MwstOutput" HorizontalAlignment="Left" Margin="466,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.86,-0.093" Height="33" Width="100" FontSize="24" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock x:Name="NettoOutput" HorizontalAlignment="Left" Margin="466,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.86,-0.093" Height="33" Width="100" FontSize="24" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1026,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"><Run Text="Info: "/><Run/><LineBreak/><Run Text="Dieses Programm berechnet die Gesamtkosten für getanktes Benzin."/></TextBlock>
+                    <TextBlock x:Name="ErrorOutput" HorizontalAlignment="Left" Margin="219,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Tankstellenpreis" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Aufgabe 2">
+                <Grid Background="#FF0C0C1C" Margin="0,0,-1,0">
+
+                    <Button Content="Berechnen" HorizontalAlignment="Left" VerticalAlignment="Center" Height="72" Width="172" Click="RechteckBerechnen" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="24" Margin="742,0,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="226,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="248" FontSize="36"><Run Text="Seitenlänge a"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="226,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="248" FontSize="36"><Run Text="Seitenlänge"/><Run Text=" b"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBox x:Name="InputA" HorizontalAlignment="Left" Margin="474,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="42" FontSize="24" TextAlignment="Center"/>
+                    <TextBox x:Name="InputB" HorizontalAlignment="Left" Margin="474,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Height="42" FontSize="24" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="274,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="186" Height="50"><Run Language="de-at" Text="Diagonale:"/></TextBlock>
+                    <TextBlock x:Name="RechteckOutput" HorizontalAlignment="Left" Margin="474,409,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="164" FontSize="24" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1178,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1136,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" TextAlignment="Center" Width="274"><Run Text="Info:"/><LineBreak/><Run Text="Dieses Programm berechnet die Diagonale eines Rechtecks."/><LineBreak/><Run Text="Der Benutzer gibt die Seitenlängen a und b ein."/></TextBlock>
+                    <Rectangle HorizontalAlignment="Left" Height="230" Margin="986,240,0,0" Stroke="White" VerticalAlignment="Top" Width="349" StrokeThickness="3"/>
+                    <Rectangle HorizontalAlignment="Left" Height="2" Margin="959,351,0,0" Stroke="White" VerticalAlignment="Top" Width="400" RenderTransformOrigin="0.5,0.5" StrokeThickness="5">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-0.976" ScaleX="1.024"/>
+                                <SkewTransform AngleX="-5.177"/>
+                                <RotateTransform Angle="-33.3"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <TextBlock HorizontalAlignment="Left" Margin="1154,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="de-at" Text="b"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1354,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="de-at" Text="a"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1170,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="de-at" Text="d"/></TextBlock>
+                    <TextBlock  x:Name="BBoxOutput" HorizontalAlignment="Left" Height="18" Margin="1136,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Background="#FF1E1E38" TextAlignment="Center" FontSize="16"><Run Language="de-at"/></TextBlock>
+                    <TextBlock x:Name="ABoxOutput" HorizontalAlignment="Left" Height="18" Margin="988,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Background="#FF1E1E38" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontSize="16">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform><Run Language="de-at"/></TextBlock>
+                    <TextBlock x:Name="DBoxOutput" HorizontalAlignment="Left" Height="18" Margin="1128,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Background="#FF1E1E38" RenderTransformOrigin="0.5,0.5" FontSize="16" TextAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-34"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform><Run Language="de-at"/></TextBlock>
+                    <TextBlock x:Name="ErrorOutput1" HorizontalAlignment="Left" Margin="209,299,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Rechtecksdiagonale" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Aufgabe 3">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="183,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="190" FontSize="36"><Run Text="Warenwert"/><Run Language="de-at" Text=":"/><Run Text=" ("/><Run Text=":"/><Run Text="Netto"/><Run Text=")"/><Run Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="224,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="108" FontSize="36"><Run Language="de-at" Text="MwSt.:"/></TextBlock>
+                    <TextBlock x:Name="MwstOutput2" HorizontalAlignment="Left" Margin="434,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="163" RenderTransformOrigin="0.481,0.98" Text="" Height="42" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBox x:Name="WarenwertInput" HorizontalAlignment="Left" Margin="434,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Height="42" FontSize="22" TextAlignment="Center"/>
+                    <TextBlock x:Name="RabattOutput" HorizontalAlignment="Left" Margin="666,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" FontSize="22" Foreground="#FF3AEF15" TextAlignment="Center"><Run Language="de-at"/></TextBlock>
+                    <Button Content="Bestätigen" HorizontalAlignment="Left" Margin="986,237,0,0" VerticalAlignment="Top" Height="72" Width="172" Click="WarenwertBerechnen" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22"/>
+                    <TextBlock x:Name="ErgebnisOutput" HorizontalAlignment="Left" Margin="434,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="163" Height="42" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="144" FontSize="36" Margin="206,322,0,0"><Run Language="de-at" Text="Brutto"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1056,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextAlignment="Center"><Run Text="Info: "/><LineBreak/><Run Text="ab 500€ gibt es ein 5% Rabatt"/></TextBlock>
+                    <TextBlock x:Name="ErrorOutput2" HorizontalAlignment="Left" Margin="224,430,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Preis mit Rabatt und MwSt." VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Aufgabe 4">
+                <Grid Background="#FF0C0C1C">
+                    <Button Content="Berechne" HorizontalAlignment="Left" VerticalAlignment="Top" Click="EuklidischeBerechnen" Height="72" Width="172" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Margin="636,509,0,0"/>
+                    <TextBox x:Name="EuklidischeInputA" HorizontalAlignment="Left" Margin="377,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Height="48" FontSize="22" TextAlignment="Center"/>
+                    <TextBox x:Name="EuklidischeInputB" HorizontalAlignment="Left" Margin="377,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="48" FontSize="22" TextAlignment="Center"/>
+                    <TextBlock x:Name="EuklidischeOutput" HorizontalAlignment="Left" Margin="414,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="156" FontSize="22" Background="#FF1E1E38" TextAlignment="Center" RenderTransformOrigin="0.503,0.489"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="311,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="84"><Run Text="kgV"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="234,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="49" Width="101"><Run Language="de-at" Text="Zahl1:"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="234,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="49" Width="101"><Run Language="de-at" Text="Zahl2:"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="998,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" FontSize="16" TextAlignment="Center"><Run Text="Info "/><LineBreak/><Run/><LineBreak/><Run Text="Dieses Programm berechnet das kleinste gemeinsame Vielfache (kgV) von zwei Zahlen."/><LineBreak/><Run Text="Das kgV ist die kleinste Zahl, die durch beide Zahlen teilbar ist."/><LineBreak/><Run Text="Berechnet wird es mit:"/><LineBreak/><Run Text="kgV = (a × b) ÷ ggT(a, b),"/><LineBreak/><Run Text="wobei der ggT mit dem Euklidischen Algorithmus ermittelt wird."/><LineBreak/><Run Text="Einfach zwei positive Zahlen eingeben, und das Programm zeigt das Ergebnis."/></TextBlock>
+                    <TextBlock x:Name="ErrorOutput3" HorizontalAlignment="Left" Margin="187,354,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="kgV-Berechnung" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 5">
+                <Grid Background="#FF0C0C1C">
+
+                    <Button Content="Berechnen" HorizontalAlignment="Left" Margin="626,527,0,0" VerticalAlignment="Top" Height="72" Width="172" Click="QuadratZahlButton" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22"/>
+                    <TextBlock x:Name="QuadratZahlenOutput" HorizontalAlignment="Left" Margin="856,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="392" Width="267" FontSize="28" Text="" Background="#FF1E1E38" TextAlignment="Center" LineHeight="6"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="107,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="504" TextAlignment="Center"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Dieses Programm erstellt eine Tabelle der Quadratzahlen für die Zahlen von 1 bis 10."/><LineBreak/><Run Text="Dabei wird jede Zahl mit ihrem Quadrat angezeigt. Das Quadrat einer Zahl erhält man, indem man die Zahl mit sich selbst multipliziert (z. B. 3 × 3 = 9)."/><LineBreak/><Run Text="Die Ausgabe erfolgt tabellarisch in zwei Spalten:"/><LineBreak/><Run/><LineBreak/><Run Text="Die erste Spalte zeigt die Zahl"/><LineBreak/><Run/><LineBreak/><Run Text="Die zweite Spalte zeigt das Quadrat dieser Zahl"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Quadratzahlen-Tabelle" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 6">
+                <Grid Background="#FF0C0C1C">
+                    <Button Content="Anzeigen" HorizontalAlignment="Center" Margin="0,554,0,0" VerticalAlignment="Top" Height="72" Width="172" Click="HirschButton" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22"/>
+                    <TextBlock x:Name="HirschOutput" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="245" Width="532" FontSize="22" Background="#FF1E1E38" TextAlignment="Center" Margin="0,235,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="44,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="388"><Run Language="de-at" Text="Hier die Berechnung-&gt;"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="825,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" FontSize="18" TextAlignment="Center"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Im Nationalpark leben derzeit 300 Hirsche. Die Population wächst jedes Jahr um 6 %, jedoch sterben oder verschwinden jährlich 20 Tiere. Dieses Programm berechnet die Entwicklung der Hirschpopulation über einen Zeitraum von 15 Jahren."/><LineBreak/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Hirsch-Population" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 7">
+                <Grid Background="#FF0C0C1C">
+                    <TextBox x:Name="KapitalInput" HorizontalAlignment="Left" Margin="250,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="39" Grid.ColumnSpan="2" FontSize="22" TextAlignment="Center"/>
+                    <TextBox x:Name="ZinsenInput" HorizontalAlignment="Left" Margin="250,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Height="39" Grid.ColumnSpan="2" FontSize="22" TextAlignment="Center"/>
+                    <Button Content="Berechnen" HorizontalAlignment="Left" Margin="887,480,0,0" VerticalAlignment="Top" Height="72" Width="172" Click="ZinsenButton" Grid.ColumnSpan="2" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="821,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="304" FontSize="36" Grid.ColumnSpan="2"><Run Language="de-at" Text="Kapitalentwicklung"/></TextBlock>
+                    <TextBlock x:Name="ZinsenOutput" HorizontalAlignment="Left" Margin="753,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="278" Width="440" FontSize="22" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="81,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="126"><Run Text="Kapital"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="72,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="135"><Run Text="Zinssatz"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="72,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" FontSize="18" TextAlignment="Center"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Dieses Programm berechnet die Entwicklung eines angelegten Kapitals über mehrere Jahre unter Berücksichtigung von Zinseszins."/><LineBreak/><Run Text="Der jährliche Zinssatz wird auf das Kapital angewendet und dem Kapital hinzugefügt, sodass das Kapital jedes Jahr wächst."/><LineBreak/><Run Text="Nach Eingabe der Anfangseinlage, des Zinssatzes (in Prozent) und der Anlagedauer zeigt das Programm die Entwicklung des Kapitals für jedes Jahr an."/></TextBlock>
+                    <TextBlock x:Name="ErrorOutput4" HorizontalAlignment="Left" Margin="96,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Zinseszins" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 8">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <Button Content="Anzeigen" HorizontalAlignment="Center" Margin="0,509,0,0" VerticalAlignment="Top" Height="72" Width="172" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Click="BauernhofAnzeigen"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1018,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" TextAlignment="Center" Width="397"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Dieses Programm berechnet die Anzahl der Kühe, Schafe und Ziegen auf einem Bauernhof basierend auf den gegebenen Bedingungen:"/><LineBreak/><Run/><LineBreak/><Run Text="Es gibt doppelt so viele Schafe wie Ziegen."/><LineBreak/><Run/><LineBreak/><Run Text="Die Anzahl der Kühe ist um 5 größer als die der Schafe."/><LineBreak/><Run/><LineBreak/><Run Text="Insgesamt werden 180 Beine gezählt (Kühe, Schafe und Ziegen haben jeweils 4 Beine)."/><LineBreak/><Run/><LineBreak/><Run Text="Anhand dieser Informationen ermittelt das Programm, wie viele Tiere jeder Art auf dem Hof stehen."/></TextBlock>
+                    <TextBlock x:Name="BauernhofOutput" HorizontalAlignment="Left" Margin="246,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="333" Width="504" FontSize="36" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Tieranzahl berechnen" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 9 + 10">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <Button Content="Berechnen" HorizontalAlignment="Center" Margin="0,490,0,0" VerticalAlignment="Top" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" Height="72" Width="172" FontSize="22" Click="UmfangUndFlaecheAusrechnen"/>
+                    <Ellipse HorizontalAlignment="Left" Height="233" Margin="941,293,0,0" Stroke="White" VerticalAlignment="Top" Width="254" StrokeThickness="5"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="225,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="122"><Run Text="Radius"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBox x:Name="RadiusInput" HorizontalAlignment="Left" Margin="368,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="42" FontSize="24" TextAlignment="Center"/>
+                    <TextBlock x:Name="UmfangOutput" HorizontalAlignment="Left" Margin="369,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="148" Background="#FF1E1E38" TextAlignment="Center" FontSize="24" RenderTransformOrigin="0.5,0.5">
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="225,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"><Run Text="Umfang"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="867,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="402" TextAlignment="Center" Height="151"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Dieses Programm berechnet Umfang und Fläche eines Kreises anhand des Radius."/><LineBreak/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1016,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="104" FontSize="22"><Run Text="U = 2"/><Run Language="de-at" Text="*"/><Run Text="π"/><Run Language="de-at" Text="*"/><Run Text="r"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="225,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36"><Run Text="Fläche"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock x:Name="FlaecheOutput" HorizontalAlignment="Left" Margin="369,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="148" Background="#FF1E1E38" TextAlignment="Center" FontSize="24" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="0.278"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="0.495"/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1016,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="104" FontSize="22"><Run Language="de-at" Text="A"/><Run Text=" = π"/><Run Text="*"/><Run Text="r"/><Run Text="^2"/></TextBlock>
+                    <TextBlock x:Name="UCircleOutput" HorizontalAlignment="Left" Margin="1028,537,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Background="#FF1E1E38" TextAlignment="Center" Width="80"/>
+                    <TextBlock x:Name="ACircleOutput" HorizontalAlignment="Left" Margin="1028,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Background="#FF1E1E38" TextAlignment="Center" Width="80"/>
+                    <TextBlock x:Name="ErrorOutput5" HorizontalAlignment="Left" Margin="234,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Kreisumfang" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 11">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <Button Content="Zahl Hinzufügen" HorizontalAlignment="Left" Margin="764,245,0,0" VerticalAlignment="Top" Height="72" Width="172" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Click="SummeUndMittelwertButton"/>
+                    <TextBox x:Name="ZahlInput" HorizontalAlignment="Left" Margin="450,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="52" FontSize="24" TextAlignment="Center"/>
+                    <TextBlock x:Name="SummeOutput" HorizontalAlignment="Left" Margin="474,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="44" Width="158" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock x:Name="MittelwertOutput" HorizontalAlignment="Left" Margin="801,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Background="#FF1E1E38" TextAlignment="Center" Height="44" Width="158"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="493,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"><Run Language="de-at" Text="Summe"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="812,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"><Run Language="de-at" Text="Mittelwert"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="1078,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" TextAlignment="Center" Width="324"><Run Language="de-at" Text="Info"/><LineBreak/><Run/><LineBreak/><Run Text="Das Programm liest positive Zahlen ein und berechnet deren Summe und Mittelwert."/><LineBreak/><Run Text="Die Eingabe endet mit einer negativen Zahl, die nicht berücksichtigt wird."/></TextBlock>
+                    <TextBlock x:Name="MitZaehlerSummeOutput" HorizontalAlignment="Left" Margin="506,331,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" TextAlignment="Center" FontSize="24"/>
+                    <TextBlock x:Name="ErrorOutput6" HorizontalAlignment="Left" Margin="474,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="#FFF70000" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Summe und Mittelwert" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                    <TextBlock x:Name="MitZaehlerMittelwerOutput" HorizontalAlignment="Left" Margin="637,331,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"  TextAlignment="Center" FontSize="24"/>
+                    <TextBlock x:Name="ZahlenListeOutput" HorizontalAlignment="Left" Margin="85,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="24" Height="417" Width="221"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 12">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
+                    <Button Content="Anzeigen" HorizontalAlignment="Center" Margin="0,539,0,0" VerticalAlignment="Top" Height="72" Width="172" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Click="DameBrettAnzeige"/>
+                    <TextBlock x:Name="DameBrettOutput" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="393" Width="484" FontSize="36" Background="#FF1E1E38" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1233,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="1083,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="20" TextAlignment="Center"><Run Text="Info:"/><LineBreak/><Run Text="Dieses Programm zeigt alle Felder eines Damebretts (8×8) an."/><LineBreak/><Run Text="Die Felder haben Namen wie „1A“, „1B“, „1C“ usw. – also Zeilennummer plus Buchstabe für die Spalte."/><LineBreak/><Run Text="So kannst du sehen, wie die Positionen auf einem Spielbrett bezeichnet werden."/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Dame-Brett Ausgabe" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aufgabe 13 (Bonus 2)">
+                <Grid Background="#FF0C0C1C">
+                    <TextBlock HorizontalAlignment="Left" Margin="26,34,0,0" TextWrapping="Wrap" Text="Hangman" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"/>
+                    <TextBox x:Name="BuchstabenInput" HorizontalAlignment="Left" Margin="809,521,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="28" FontSize="24" TextAlignment="Center" Text=""/>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="1003,518,0,0" VerticalAlignment="Top" Width="85" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Click="Button_Click"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="229,492,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="278" Background="#FF583903"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="57,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="#FF583903" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="229,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233" Background="#FF583903" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="353,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" Background="#FFCC860B" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="371,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="46" Background="#FFFFE0BD" RenderTransformOrigin="0.5,0.5" Height="36">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="369,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" Background="#FF0056B7" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="385,331,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Background="#FF455F72" RenderTransformOrigin="0.5,0.5" Height="10">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="45"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="345,331,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="61" Background="#FF455F72" RenderTransformOrigin="0.5,0.5" Height="10">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-45"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="391,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Background="#FF0056B7" RenderTransformOrigin="0.5,0.5" Height="10">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="30"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="342,291,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Background="#FF0056B7" RenderTransformOrigin="0.5,0.5" Height="10">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-30"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="Versuche" HorizontalAlignment="Left" Margin="775,522,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" FontSize="20"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="98"><Run Text="Versuche"/><Run Language="de-at" Text=":"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="686,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="50" Width="360" FontSize="36" TextAlignment="Center"><Run Language="de-at" Text="W O R T"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="387,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="16" Background="#FF455F72" RenderTransformOrigin="0.5,0.5" Height="10">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="387,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="16" Background="#FF9E6849" RenderTransformOrigin="0.5,0.5" Height="3">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

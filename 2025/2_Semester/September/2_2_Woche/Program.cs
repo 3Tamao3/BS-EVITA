@@ -23,6 +23,8 @@ class Program
         List<string> namen = new() { "Lena", "Markus", "Anna", "Tom" };
         namen.Sort();
 
+        
+
         foreach (var n in namen)
         {
             Console.WriteLine(n);
@@ -46,4 +48,4 @@ class Program
 
         Console.WriteLine(summe);
     }
-}
+} 
