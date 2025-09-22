@@ -1,3 +1,3 @@
 # BS-EVITA
 
-Das ist das, was ich in der Berufsschule im Fach EVITA programmiert habe.
+Was ich in der BS-EVITA gemacht habe.
