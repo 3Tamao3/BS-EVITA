@@ -1,0 +1,15 @@
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/bin/Debug/net8.0/1_Week
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/bin/Debug/net8.0/1_Week.deps.json
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/bin/Debug/net8.0/1_Week.runtimeconfig.json
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/bin/Debug/net8.0/1_Week.dll
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/bin/Debug/net8.0/1_Week.pdb
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.GeneratedMSBuildEditorConfig.editorconfig
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.AssemblyInfoInputs.cache
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.AssemblyInfo.cs
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.csproj.CoreCompileInputs.cache
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.sourcelink.json
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.dll
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/refint/1_Week.dll
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.pdb
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/1_Week.genruntimeconfig.cache
+/home/tamao/Berufsschule/2025/2_Semester/Unterricht/Oktober/1_Week/obj/Debug/net8.0/ref/1_Week.dll
