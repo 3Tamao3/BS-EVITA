@@ -18,3 +18,24 @@ C:\Users\haupt\Desktop\1USAWPF\1USAWPF\obj\Debug\net9.0-windows\refint\1USAWPF.d
 C:\Users\haupt\Desktop\1USAWPF\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.pdb
 C:\Users\haupt\Desktop\1USAWPF\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.genruntimeconfig.cache
 C:\Users\haupt\Desktop\1USAWPF\1USAWPF\obj\Debug\net9.0-windows\ref\1USAWPF.dll
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF_MarkupCompile.cache
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF_MarkupCompile.lref
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.dll
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\refint\1USAWPF.dll
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.pdb
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\bin\Debug\net9.0-windows\1USAWPF.exe
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\bin\Debug\net9.0-windows\1USAWPF.deps.json
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\bin\Debug\net9.0-windows\1USAWPF.runtimeconfig.json
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\bin\Debug\net9.0-windows\1USAWPF.dll
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\bin\Debug\net9.0-windows\1USAWPF.pdb
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.g.resources
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.AssemblyInfoInputs.cache
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.AssemblyInfo.cs
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.csproj.CoreCompileInputs.cache
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.sourcelink.json
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\1USAWPF.genruntimeconfig.cache
+C:\Users\reneo\GitHub Repos\BS-EVITA\2025\2_Semester\Blockwoche\September\1USAWPF\obj\Debug\net9.0-windows\ref\1USAWPF.dll

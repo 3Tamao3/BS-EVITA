@@ -246,7 +246,7 @@
                 <Grid Background="#FF0C0C1C">
                     <TextBlock HorizontalAlignment="Left" Margin="1177,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="275" FontSize="72" FontFamily="Segoe Script"><Run Language="de-at" Text="Tamao"/></TextBlock>
                     <Button Content="Zahl Hinzufügen" HorizontalAlignment="Left" Margin="764,245,0,0" VerticalAlignment="Top" Height="72" Width="172" Background="#FF1E1E38" BorderBrush="#FF5C5C9C" Foreground="White" FontSize="22" Click="SummeUndMittelwertButton"/>
-                    <TextBox x:Name="ZahlInput" HorizontalAlignment="Left" Margin="450,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="52" FontSize="24" TextAlignment="Center"/>
+                    <TextBox x:Name="ZahlInput" HorizontalAlignment="Left" Margin="450,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="52" FontSize="24" TextAlignment="Center" KeyDown="EnterSumme"/>
                     <TextBlock x:Name="SummeOutput" HorizontalAlignment="Left" Margin="474,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Height="44" Width="158" Background="#FF1E1E38" TextAlignment="Center"/>
                     <TextBlock x:Name="MittelwertOutput" HorizontalAlignment="Left" Margin="801,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Background="#FF1E1E38" TextAlignment="Center" Height="44" Width="158"/>
                     <TextBlock HorizontalAlignment="Left" Margin="493,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"><Run Language="de-at" Text="Summe"/></TextBlock>

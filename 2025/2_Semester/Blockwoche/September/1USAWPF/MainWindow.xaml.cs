@@ -252,5 +252,42 @@ namespace _1USAWPF
             }
             DameBrettOutput.Text = output;
         }
+
+        private void EnterSumme(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                try
+                {
+                    ErrorOutput6.Text = "";
+                    double eingabeZahl = Convert.ToDouble(ZahlInput.Text);
+                    if (eingabeZahl < 0)
+                    {
+                        double summe = _zahlen.Sum();
+                        double mittelwert = summe / _zahlen.Count;
+                        SummeOutput.Text = summe.ToString();
+                        MittelwertOutput.Text = mittelwert.ToString();
+                        _zahlen.Clear();
+                        _mitZaehlerSumme = 0;
+                        _mitZaehlerMittelwert = 0;
+                    }
+                    _mitZaehlerSumme += eingabeZahl;
+                    _mitZaehlerMittelwert += 1;
+                    _zahlen.Add(eingabeZahl);
+                    ZahlenListeOutput.Text = string.Join(", ", _zahlen);
+                    MitZaehlerSummeOutput.Text = _mitZaehlerSumme.ToString();
+                    MitZaehlerMittelwerOutput.Text = _mitZaehlerMittelwert.ToString();
+                }
+                catch
+                {
+                    ErrorOutput6.Text = $"YOOOOOO das kannst du nicht machen";
+                }
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
