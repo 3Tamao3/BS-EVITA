@@ -1,13 +1,4 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace WpfApp1
 {
@@ -17,77 +8,77 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
 
-        Dictionary<string, string> _telefonbuch = new()
+        private Dictionary<string, string> _telefonbuch = new()
         {
-            {"Max", "+43 664 1234567" },
-            {"Lisa", "+43 664 7654321" },
-            {"Emma", "+43 664 9876543" }
+            {"Pony", "+233 663 213123" },
+            {"Adam", "+4213 661 2713818" },
+            {"Zov", "+41343 662 21301231" }
         };
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void PhoneDisplay(object sender, RoutedEventArgs e)
+        private void TelefonbuchAnzeigen(object sender, RoutedEventArgs e)
         {
-            phoneDisplayText.Text = string.Empty; 
-            foreach (var item in _telefonbuch)
+            nummerText.Text = string.Empty;
+            foreach (var user in _telefonbuch)
             {
-                phoneDisplayText.Text += $"{item.Key} -> {item.Value}\n";
-                phoneCount.Text = $"Count: {_telefonbuch.Count}";
+                nummerText.Text += $"{user.Key} >>> {user.Value}\n";
+                zähler.Text = $"Einträge >{_telefonbuch.Count}";
             }
         }
 
-        private void PhoneSearch(object sender, RoutedEventArgs e)
+        private void TelefonbuchSuche(object sender, RoutedEventArgs e)
         {
-            phoneDisplayText.Text = string.Empty;
-            phoneCount.Text = string.Empty;
-            string searchUser = searchBox.Text.Trim();
+            nummerText.Text = string.Empty;
+            zähler.Text = string.Empty;
+            string sucheUser = suchBox.Text.Trim();
 
-            if (_telefonbuch.ContainsKey(searchUser))
+            if (_telefonbuch.ContainsKey(sucheUser))
             {
-                string phoneNumber = _telefonbuch[searchUser];
-                phoneDisplayText.Text = $"{searchUser} -> {phoneNumber}";
+                string telefonNummer = _telefonbuch[sucheUser];
+                nummerText.Text = $"{sucheUser} >>> {telefonNummer}";
             }
             else
             {
-                phoneDisplayText.Text = $"Kein Eintrag für {searchUser} gefunden.";
+                nummerText.Text = $"{sucheUser} nicht gefunden.";
             }
-            searchBox.Clear();
+            suchBox.Clear();
         }
 
-        private void PhoneAdd(object sender, RoutedEventArgs e)
+        private void TelefonbuchHinzufuegen(object sender, RoutedEventArgs e)
         {
-            phoneDisplayText.Text = string.Empty;
-            phoneCount.Text = string.Empty;
-            string name = phoneNameInput.Text.Trim();
+            nummerText.Text = string.Empty;
+            zähler.Text = string.Empty;
+            string name = telefonbuchNameInput.Text.Trim();
             string number = phoneNumberInput.Text.Trim();
 
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(number))
             {
-                phoneDisplayText.Text = "Bitte sowohl Namen als auch Telefonnummer eingeben.";
+                nummerText.Text = "Bitte Name und Telefonnummer eingeben";
                 return;
             }
 
             if (_telefonbuch.ContainsKey(name))
             {
-                phoneDisplayText.Text = $"Eintrag für {name} existiert bereits.";
+                nummerText.Text = $"{name} existiert schon";
             }
             else
             {
                 _telefonbuch.Add(name, number);
-                phoneDisplayText.Text = $"Eintrag hinzugefügt-> \n {name} → {number}";
+                nummerText.Text = $"{name} → {number}\nAdded";
             }
 
-            phoneNameInput.Clear();
+            telefonbuchNameInput.Clear();
             phoneNumberInput.Clear();
         }
 
-        private void PhoneDelete(object sender, RoutedEventArgs e)
+        private void TelefonbuchLöschen(object sender, RoutedEventArgs e)
         {
-            phoneCount.Text = string.Empty;
+            zähler.Text = string.Empty;
             _telefonbuch.Clear();
-            phoneDisplayText.Text = "Telefonbuch wurde geleert.";
+            nummerText.Text = "Telefonbuch wurde geleert.";
         }
     }
 }
