@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Unterricht\\Oktober\\2_2_Week\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F1163D5-04F7-4365-B8B1-4F76240D135D}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\reneo\\github repos\\bs-evita\\2025\\2_semester\\unterricht\\oktober\\2_2_week\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1163D5-04F7-4365-B8B1-4F76240D135D}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B68813F-23C2-8DF2-1B1F-9033A2893F62}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\reneo\\github repos\\bs-evita\\2025\\2_semester\\unterricht\\oktober\\2_2_week\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B68813F-23C2-8DF2-1B1F-9033A2893F62}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Unterricht\\Oktober\\2_2_Week\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Unterricht\\Oktober\\2_2_Week\\ConsoleApp1\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwBUAAAAaAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Unterricht\\Oktober\\2_2_Week\\ConsoleApp1\\ConsoleApp1\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAACcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T07:17:27.072Z",
+              "WhenOpened": "2025-10-20T05:55:19.283Z",
               "EditorCaption": ""
             }
           ]
