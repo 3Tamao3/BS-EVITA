@@ -10,11 +10,22 @@
                 <Style.Triggers>
                     <Trigger Property="IsMouseOver" Value="True">
                         <Setter Property="Background" Value="#6e50b5"/>
-                        <Setter Property="Background" Value="#8276c0"/>
+                        <Setter Property="BorderBrush" Value="#8276c0"/>
                     </Trigger>
+
+                    <DataTrigger Binding="{Binding ElementName=textInfo,Path=IsActive}" Value="True">
+                        <Setter Property="Background" Value="#6e50b5"/>
+                        <Setter Property="BorderBrush" Value="#8276c0"/>
+                    </DataTrigger>
                 </Style.Triggers>
             </Style>
         </Border.Style>
-            
+
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="{Binding ElementName=textInfo,Path=TextTop}" Foreground="#b1abd1" FontSize="14" HorizontalAlignment="Center"/>
+            <TextBlock Text="{Binding ElementName=textInfo,Path=TextMiddle}" Foreground="#ffffff" FontSize="24" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+            <TextBlock Text="{Binding ElementName=textInfo,Path=TextBottom}" Foreground="#c8c4e0" FontSize="16" HorizontalAlignment="Center" FontWeight="SemiBold"/>
+        </StackPanel>
+        
     </Border>
 </UserControl>

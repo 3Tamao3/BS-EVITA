@@ -25,7 +25,7 @@ class Program
         // Aufgabe 2
         string[,] namen = {
             {"Anna", "Ben", "Clara"},
-            {"David", "Emma", "Finn"}
+            {"David", "5orka", "Finn"}
         };
 
         for (int i = 0; i < namen.GetLength(0); i++)
