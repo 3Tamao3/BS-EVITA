@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fitness Tracking App Rene Özbay 1usa")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae4ff212fbe289600af1934c7e902a757a2b0b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fitness Tracking App Rene Özbay 1usa")]

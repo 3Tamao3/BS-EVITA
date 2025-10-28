@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "WoFl/X5ggQ4=",
+  "dgSpecHash": "PSVwM1rvRic=",
   "success": true,
-  "projectFilePath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+  "projectFilePath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\haupt\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\haupt\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
-    "C:\\Users\\haupt\\.nuget\\packages\\mahapps.metro.iconpacks.core\\6.1.0\\mahapps.metro.iconpacks.core.6.1.0.nupkg.sha512",
-    "C:\\Users\\haupt\\.nuget\\packages\\mahapps.metro.iconpacks.material\\6.1.0\\mahapps.metro.iconpacks.material.6.1.0.nupkg.sha512"
+    "C:\\Users\\Tamao\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Tamao\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\Tamao\\.nuget\\packages\\mahapps.metro.iconpacks.core\\6.1.0\\mahapps.metro.iconpacks.core.6.1.0.nupkg.sha512",
+    "C:\\Users\\Tamao\\.nuget\\packages\\mahapps.metro.iconpacks.material\\6.1.0\\mahapps.metro.iconpacks.material.6.1.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "Das Paket \"LiveCharts 0.9.7\" wurde nicht mit dem Projektzielframework \"net10.0-windows7.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "projectPath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "filePath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
       "libraryId": "LiveCharts",
       "targetGraphs": [
         "net10.0-windows7.0"
@@ -25,10 +25,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "message": "Das Paket \"LiveCharts.Wpf 0.9.7\" wurde nicht mit dem Projektzielframework \"net10.0-windows7.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
-      "projectPath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "filePath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
       "libraryId": "LiveCharts.Wpf",
       "targetGraphs": [
         "net10.0-windows7.0"

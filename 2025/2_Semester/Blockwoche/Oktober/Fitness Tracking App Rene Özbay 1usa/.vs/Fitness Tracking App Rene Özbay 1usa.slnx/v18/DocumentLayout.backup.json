@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\",
+  "WorkspaceRootPath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\tamao\\source\\repos\\bs-evita\\2025\\2_semester\\blockwoche\\oktober\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\tamao\\source\\repos\\bs-evita\\2025\\2_semester\\blockwoche\\oktober\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\tamao\\source\\repos\\bs-evita\\2025\\2_semester\\blockwoche\\oktober\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\haupt\\source\\repos\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|c:\\users\\tamao\\source\\repos\\bs-evita\\2025\\2_semester\\blockwoche\\oktober\\fitness tracking app rene \u00F6zbay 1usa\\fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7A87EAB6-867B-56DB-BE7E-8C1B3021B0E3}|Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj|solutionrelative:fitness tracking app rene \u00F6zbay 1usa\\usercontrols\\textinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TextInfo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml.cs",
-              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml.cs",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml.cs",
-              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwB4AAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:26:36.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TextInfo.xaml",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
-              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
-              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-27T13:26:18.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Fitness Tracking App Rene \u00D6zbay 1usa",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj",
-              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj",
-              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T13:19:02.128Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
               "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T12:14:47.385Z",
+              "WhenOpened": "2025-10-27T20:51:53.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
-              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
-              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
+              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-27T07:42:00.905Z",
+              "WhenOpened": "2025-10-27T20:51:49.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\haupt\\source\\repos\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
-              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\MainWindow.xaml",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
+              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
+              "ToolTip": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
+              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-27T07:16:48.47Z",
+              "WhenOpened": "2025-10-27T20:51:45.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TextInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
+              "RelativeDocumentMoniker": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
+              "ToolTip": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene \u00D6zbay 1usa\\Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
+              "RelativeToolTip": "Fitness Tracking App Rene \u00D6zbay 1usa\\UserControls\\TextInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-27T20:51:42.029Z",
               "EditorCaption": ""
             }
           ]
