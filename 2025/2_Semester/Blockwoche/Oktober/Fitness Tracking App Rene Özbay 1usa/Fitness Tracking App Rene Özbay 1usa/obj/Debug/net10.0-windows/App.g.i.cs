@@ -60,7 +60,7 @@ namespace Fitness_Tracking_App_Rene_Özbay_1usa {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/Fitness Tracking App Rene Özbay 1usa;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Fitness Tracking App Rene Özbay 1usa;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

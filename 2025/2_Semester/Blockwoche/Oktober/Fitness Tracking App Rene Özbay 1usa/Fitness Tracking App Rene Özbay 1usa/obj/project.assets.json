@@ -157,23 +157,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\reneo\\.nuget\\packages\\": {},
+    "C:\\Users\\Tamao\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "projectUniqueName": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
       "projectName": "Fitness Tracking App Rene Özbay 1usa",
-      "projectPath": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
-      "packagesPath": "C:\\Users\\reneo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reneo\\GitHub Repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\obj\\",
+      "projectPath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa.csproj",
+      "packagesPath": "C:\\Users\\Tamao\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tamao\\source\\repos\\BS-EVITA\\2025\\2_Semester\\Blockwoche\\Oktober\\Fitness Tracking App Rene Özbay 1usa\\Fitness Tracking App Rene Özbay 1usa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\reneo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tamao\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
